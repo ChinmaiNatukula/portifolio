@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f8ff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #0077ff, #00c6ff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      background: #e6f2ff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #0077ff;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      margin: 30px auto;
+    }
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #0077ff;
+      object-fit: cover;
+    }
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #0077ff;
+      margin-bottom: 20px;
+    }
+
+    .boxes {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f0f8ff;
+      border-left: 5px solid #0077ff;
+    }
+    .box h3 {
+      color: #0077ff;
+      margin-bottom: 10px;
+    }
+    .skills-grid, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .skill {
+      text-align: center;
+      padding: 10px;
+      background: #f8fbff;
+      border-radius: 10px;
+    }
+    .skill img {
+      width: 40px;
+      height: 40px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 12px #0077ff;
+    }
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .card b {
+      display: block;
+      color: #0077ff;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      background: linear-gradient(90deg, #0077ff, #00c6ff);
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    }
+    .cgpa-highlight {
+      font-weight: bold;
+      color: #0077ff;
+    }
+    .contact-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-top: 30px;
+    }
+    .contact-icons a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 500;
+      color: #0077ff;
+    }
+    .contact-icons img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>My Portfolio</header>
+
+<nav>
+  <a href="#whoami">Who Am I</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="whoami">
+  <h2>About Me</h2>
+  <p style="text-align:center;">
+    I'm a passionate Full Stack Developer focused on delivering scalable and user-centric applications.<br/>
+    I love turning ideas into real-world web solutions using modern tech stacks.<br/>
+    I’m proficient in both frontend and backend technologies.<br/>
+    Collaboration, problem-solving, and innovation fuel my workflow.<br/>
+    I'm committed to clean code and performance optimization.<br/>
+    I continuously learn and grow with every project I take on.
+  </p>
+
+  <div class="hero">
+    <img src="image.jpg" alt="Your Photo"/>
+  </div>
+  <h2>Who Am I</h2>
+  <p style="text-align:center;">I'm a Full Stack Developer passionate about building scalable, user-friendly web applications.</p>
+  <div class="boxes">
+    <div class="box">
+      <h3>Full Stack Web Developer</h3>
+      <ul>
+        <li>Expert in frontend and backend development</li>
+        <li>Dedicated to user-friendly, scalable apps</li>
+        <li>Skilled in APIs & database handling</li>
+        <li>Exploring modern web technologies</li>
+        <li>Clean & efficient coding style</li>
+        <li>Focused on seamless UI/UX design</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Always Learning</h3>
+      <ul>
+        <li>Committed to continuous skill growth</li>
+        <li>Learning latest tools and frameworks</li>
+        <li>Enjoy solving real-world problems</li>
+        <li>Inspired by innovative tech</li>
+        <li>Learning from every project</li>
+        <li>Adaptable to changing trends</li>
+      </ul>
+    </div>
+  </div>
+<section id="education">
+  <h2>Education</h2>
+  <div style="display: flex; flex-direction: column; gap: 15px;">
+    <div style="background: #e6f7ff; padding: 20px; border-left: 6px solid #0077ff; border-radius: 10px;">
+      <h3 style="margin-bottom: 8px;">🎓 B.Tech in CSE – JNTU</h3>
+      <p>Graduated with <span class="cgpa-highlight">8.3 CGPA</span>. Specialized in full stack, participated in tech clubs and project expos <br>
+          Covered: Data Structures, Algorithms, DBMS, OS, Networks, Web Technologies.<br>
+          Completed capstone and multiple team mini-projects during coursework.<br>
+          Active in college tech clubs, coding competitions and hackathons.</p>
+    </div>
+    <div style="background: #f0fff4; padding: 20px; border-left: 6px solid #00cc66; border-radius: 10px;">
+      <h3 style="margin-bottom: 8px;">📘 Intermediate (MPC)</h3>
+      <p>Scored <span class="cgpa-highlight">89%</span>. Strong performance in  Maths, Physics, Chemistry emphasised problem solving skills.<br>
+          Prepared foundation for engineering and programming concepts.<br>
+          Participated in coding workshops and college-level competitions.<br>
+           Focus on logical thinking and numerical ability</p>
+    </div>
+    <div style="background: #fff0f5; padding: 20px; border-left: 6px solid #cc3399; border-radius: 10px;">
+      <h3 style="margin-bottom: 8px;">📚 SSC - 10th Grade</h3>
+      <p>Top performer with <span class="cgpa-highlight">92%</span>. Led quiz and debate teams, received multiple academic awards Strong fundamentals in mathematics and science from an early age.<br>
+           Recognized for academic excellence and project presentations.<br>
+           Laid groundwork for disciplined study and continuous learning.<br>
+            Motivated to pursue technology and engineering courses thereafter</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills">
+<h2>Skills</h2>
+
+
+<!-- FRONTEND SKILLS -->
+<div class="skills-category">
+<h3 style="color:#005fcc; text-align:center;">Frontend</h3>
+<div class="skills-grid">
+<div class="skill"><img src="https://img.icons8.com/color/48/html-5.png"/>HTML5</div>
+<div class="skill"><img src="https://img.icons8.com/color/48/css3.png"/>CSS3</div>
+<div class="skill"><img src="https://img.icons8.com/color/48/javascript.png"/>JavaScript</div>
+</div>
+</div>
+
+
+<!-- PROGRAMMING LANGUAGES -->
+<div class="skills-category">
+<h3 style="color:#005fcc; text-align:center;">Programming Languages</h3>
+<div class="skills-grid">
+<div class="skill"><img src="https://img.icons8.com/color/48/python--v1.png"/>Python</div>
+<div class="skill"><img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png"/>Java</div>
+<div class="skill"><img src="https://img.icons8.com/color/48/c-programming.png"/>C Language</div>
+</div>
+</div>
+
+
+<!-- BACKEND SKILLS -->
+<div class="skills-category">
+<h3 style="color:#005fcc; text-align:center;">Backend</h3>
+<div class="skills-grid">
+<div class="skill"><img src="https://img.icons8.com/ios-filled/50/flask.png"/>Flask</div>
+<div class="skill"><img src="https://img.icons8.com/color/48/django.png"/>Django</div>
+<div class="skill"><img src="https://img.icons8.com/color/48/nodejs.png"/>Node.js</div>
+</div>
+</div>
+
+
+<!-- DATABASE SKILLS -->
+<div class="skills-category">
+<h3 style="color:#005fcc; text-align:center;">Database</h3>
+<div class="skills-grid">
+<div class="skill"><img src="https://img.icons8.com/color/48/mysql-logo.png"/>MySQL</div>
+<div class="skill"><img src="https://img.icons8.com/color/48/postgreesql.png"/>PostgreSQL</div>
+<div class="skill"><img src="https://img.icons8.com/color/48/mongodb.png"/>MongoDB</div>
+</div>
+</div>
+
+
+</section>
+
+
+</body>
+</html>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="card">
+      <img src="https://img.icons8.com/color/480/microphone.png" alt="Speech"/>
+      <b>Speech-to-Text Converter</b>
+      <ul>
+        <li>Real-time transcription tool</li>
+        <li>Built using Web Speech API</li>
+        <li>Supports multiple languages</li>
+        <li>Clean, accessible interface</li>
+        <li>Runs in browser without login</li>
+        <li>Great for dictation & notes</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/fluency/480/shopping-cart-loaded.png" alt="Ecommerce"/>
+      <b>E-commerce Platform</b>
+      <ul>
+        <li>Cart & payment gateway</li>
+        <li>Admin dashboard included</li>
+        <li>Built using JS, HTML, MySQL</li>
+        <li>Responsive & secure UI</li>
+        <li>Scalable architecture</li>
+        <li>Mobile-first design</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/480/calculator.png" alt="Calculator"/>
+      <b>Calculator</b>
+      <ul>
+        <li>Scientific calculator web app</li>
+        <li>Supports all math operations</li>
+        <li>JavaScript-powered logic</li>
+        <li>Keyboard & mobile input</li>
+        <li>Instant calculation result</li>
+        <li>Neat responsive UI</li>
+      </ul>
+    </div>
+    <div class="card">
+  <img src="https://img.icons8.com/color/480/cloud.png" alt="Weather App"/> <!-- ✅ Updated Image -->
+  <b>Weather Report App</b>
+  <ul>
+    <li>Real-time weather updates</li>
+    <li>Built using Weather API</li>
+    <li>Search by location</li>
+    <li>Clean UI with forecast view</li>
+    <li>Fully responsive design</li>
+    <li>Lightweight & fast</li>
+  </ul>
+</div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/3d-fluency/480/lock.png" alt="Password"/>
+      <b>Password Generator</b>
+      <ul>
+        <li>Generates secure passwords</li>
+        <li>Strength level options</li>
+        <li>Built in HTML/CSS/JS</li>
+        <li>No backend required</li>
+        <li>Quick UI with copy option</li>
+        <li>Privacy focused</li>
+      </ul>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/480/artificial-intelligence.png" alt="AI Health"/>
+      <b>AI Health Assist</b>
+      <ul>
+        <li>Chatbot for health symptoms</li>
+        <li>Skin disease detection with CNN</li>
+        <li>Suggests doctors & medicine</li>
+        <li>Integrates Flask & ML models</li>
+        <li>Real-time chatbot answers</li>
+        <li>Works from browser directly</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="box" style="background: #fdfdff; border-left: 5px solid #6c63ff; border-radius: 12px; padding: 20px;">
+    <ul style="padding-left: 18px; line-height: 1.8;">
+      <li><b>Google AI-ML – Eduskills:</b> Studied ML concepts and implemented AI models using TensorFlow and Python.</li>
+      <li><b>Data Structures using Java – Infosys:</b> Mastered algorithms and Java data structures for real-world applications.</li>
+      <li><b>Python Basic – HackerRank:</b> Validated Python fundamentals through coding challenges and problems.</li>
+      <li><b>Fundamentals of AI – Microsoft:</b> Acquired knowledge in AI concepts and real-world applications of ML.</li>
+      <li><b>Data Science Internship – SkillDzire:</b> Worked on data visualization and predictive modeling in projects.</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="text-align:center; max-width:1000px; margin:auto;">
+    I'm always open to new opportunities, collaborations, or simply to chat about technology. Whether you’re looking to discuss a project, offer feedback, or want to connect professionally, feel free to reach out. I value clear and respectful communication. Let’s turn ideas into actions and build something impactful together. You can connect with me through the platforms below or drop me an email directly.
+  </p>
+  <div class="contact-icons">
+    <a href="mailto:natukulachinmai@gmail.com"><img src="https://img.icons8.com/fluency/28/gmail-new.png" alt="Email"/> natukulachinmai@email.com</a>
+    <a href="https://github.com/yourgithub" target="_blank"><img src="https://img.icons8.com/ios-glyphs/28/github.png" alt="GitHub"/>github.com/ChinmaiNatukula</a>
+    <a href="https:////www.linkedin.com/in/chinmai-natukula-131375289/></a>" target="_blank"><img src="https://img.icons8.com/fluency/28/linkedin.png" alt="LinkedIn"/> https://www.linkedin.com/in/natukula-chinmai-131375289/</a>
+    <a href="NATUKULA CHINMAI.pdf" target="_blank"><img src="https://img.icons8.com/ios/28/resume.png" alt="Resume"/> Download Resume</a>
+    <a href="tel:+1 9381143868"><img src="https://img.icons8.com/fluency/28/phone.png" alt="Phone"/> +91 9381143868</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Your Name. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
+
+
+
