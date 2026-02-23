@@ -1,10 +1,7 @@
-# Nandu Vasanthi - Full Stack Developer Portfolio
+# Natukula Chinmai - Full Stack Developer Portfolio
 
 A modern, responsive portfolio website showcasing my skills, projects, and experience as a Full Stack Developer. Built with React, Tailwind CSS, and Framer Motion.
 
-## Live Demo
-
-- **Frontend**: [https://portfolio-frontend-26uz.onrender.com](https://portfolio-frontend-26uz.onrender.com)
 
 ## Features
 
@@ -72,7 +69,7 @@ nandu-portfolio/
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/Nanduvasanthi/Portfolio.git
+git clone https://github.com/ChinmaiNatukula/Portifolio.git
 cd Portfolio
 ```
 
@@ -113,10 +110,9 @@ To get Web3Forms Access Key:
 
 ## Contact
 
-- Email: nvasanthi2005@gmail.com
-- GitHub: [Nanduvasanthi](https://github.com/Nanduvasanthi)
-- LinkedIn: [miriyala-nandu-vasanthi](https://linkedin.com/in/miriyala-nandu-vasanthi/)
-- Portfolio: [https://portfolio-frontend-26uz.onrender.com](https://portfolio-frontend-26uz.onrender.com)
+- Email: natukulachinmai@gmail.com
+- GitHub: [NatukulaChinmai](https://github.comChinmaiNatukula)
+- LinkedIn: [Natukula-Chinmai](https://www.linkedin.com/in/natukula-chinmai-131375289/)
 
 ## Acknowledgments
 
@@ -135,6 +131,3 @@ Completed - Live and fully functional
 - Fully responsive on all devices
 - Dark/Light mode support
 
----
-
-Last Updated: February 14, 2026
